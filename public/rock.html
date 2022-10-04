@@ -1,6 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+  body {
+    color: #5C7457;
+    font-family: 'kalam';
+  }
+    .decorative {
+    font-family: trattatello;
+    font-size: 48px;
+    }
+    .button {
+      background-color: #bbcbb9;
+      border: 5px solid  #5C7457;
+      border-radius: 10px;
+      border-style: inset;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 100%;
+      display: inline-block;
+
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+    .onethird {
+    width: 32%;
+  }
+  
+  .playercard {
+    border: 5px #5C7457 solid;
+    width: 49%;
+    text-align: center;
+  }
+  .computercard {
+    border: 5px #5C7457 solid;
+    width: 49%;
+    text-align: center;
+  }
+</style>
   <title>You played rock!</title>
 
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
@@ -8,38 +48,49 @@
 </head>
 
 <body>
-  <div>
-    <a href="/rock">
-      Play Rock
-    </a>
-  </div>
+  <div class="row">
+    <div class="onethird">
+      <a href="/rock" class="button">
+        Play Rock
+      </a>
+    </div>
 
-  <div>
-    <a href="/paper">
+  <div class="onethird">
+    <a href="/paper" class="button">
       Play Paper
     </a>
   </div>
 
-  <div>
-    <a href="/scissors">
+  <div class="onethird">
+    <a href="/scissors" class="button">
       Play Scissors
     </a>
   </div>
+</div>
+<br>
+<br>
+<div class="row">
+  <div class="playercard">
+    <h2>
+      We played rock!
+    </h2>
+  </div>
 
-  <h2>
-    We played rock!
-  </h2>
-
-  <h2>
-    They played paper!
-  </h2>
-
-  <h2>
+  <div class="computercard">
+    <h2>
+      They played paper!
+    </h2>
+  </div>
+</div>
+<br>
+  <h2 style="text-align: center;">
     We lost!
   </h2>
 
   <a href="/">
-    Rules
+    <div style="text-align: center; font-size: 15px;">
+      Rules
+    </div>
   </a>
 </body>
 </html>

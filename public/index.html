@@ -1,32 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rock-Paper-Scissors Rules</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet"> 
+<style>
+  body {
+    color: #5C7457;
+    font-family: 'kalam';
+  }
+    .decorative {
+    font-family: trattatello;
+    font-size: 48px;
+    }
+    .button {
+      background-color: #bbcbb9;
+      border: 5px solid  #5C7457;
+      border-radius: 10px;
+      border-style: inset;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 100%;
+      display: inline-block;
 
+    }
+    .row {
+    display: flex;
+    justify-content: space-between;
+    }
+    .onethird {
+    width: 32%;
+  }
+</style>
+<body>
+  <center>
+  <title>Rock-Paper-Scissors Rules</title>
+</center>
+</body>
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
   <meta charset="utf-8">
 </head>
 
 <body>
-  <div>
-    <a href="/rock">
+  <div class="row">
+    <div class="onethird">
+      <br>
+    <a href="/rock" class="button">
       Play Rock
     </a>
-  </div>
+    </div>
 
-  <div>
-    <a href="/paper">
+    <div class="onethird">
+      <br>
+    <a href="/paper" class="button">
       Play Paper
     </a>
-  </div>
+    </div>
 
-  <div>
-    <a href="/scissors">
+    <div class="onethird">
+      <br>
+    <a href="/scissors" class="button">
       Play Scissors
     </a>
+    </div>
   </div>
 
-  <h1>
+  <h1 class="decorative">
     Welcome to Rock-Paper-Scissors!
   </h1>
 
